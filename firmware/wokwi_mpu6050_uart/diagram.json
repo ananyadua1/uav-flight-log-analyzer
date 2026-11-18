@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "UAV Flight Log Analyzer",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu", "top": -110, "left": 230, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:5V", "imu:VCC", "red", [ "v20", "h130" ] ],
+    [ "uno:GND.2", "imu:GND", "black", [ "v30", "h140" ] ],
+    [ "uno:A4", "imu:SDA", "green", [ "v40", "h150" ] ],
+    [ "uno:A5", "imu:SCL", "purple", [ "v50", "h160" ] ]
+  ],
+  "dependencies": {}
+}

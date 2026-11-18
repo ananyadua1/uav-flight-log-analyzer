@@ -1,0 +1,7 @@
+streamlit>=1.50
+plotly>=6.0
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+pyulog>=1.0
+pymavlink>=2.4.41  # optional: only for live_mavlink.py
